@@ -1,0 +1,57 @@
+
+
+$color-red: #822000;
+$font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
+
+.red {
+  color: $color-red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text {
+  font-weight: normal;
+}
+
+
+// Stat block template
+.stat-block-template {
+  font-family: $font-stack;
+  background-color: #f7f2c6;
+  font-size: 1em;
+
+  .stat-block-border {
+    display: block;
+    height:5px;
+    background-color: #caa472;
+    border: 0.5px solid black;
+  }
+
+  .stat-block-text {
+    padding: 1%;
+  }
+
+  .stat-name {
+    font-family: 'Carrois Gothic SC', $font-stack;
+    font-size: 1.8em;
+    // text-transform: uppercase;
+  }
+
+  .stat-type {
+    font-size: 0.9em;
+  }
+
+  .stat-red-line {
+    .red-line-img {
+      min-height: 10px;
+      max-width: 100%;
+    }
+  }
+  
+}
