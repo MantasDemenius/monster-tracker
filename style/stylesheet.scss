@@ -1,5 +1,3 @@
-
-
 $color-red: #822000;
 $font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
 
@@ -18,9 +16,8 @@ $font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
 .text {
   font-weight: normal;
 }
-
-
 // Stat block template
+
 .stat-block-template {
   font-family: $font-stack;
   background-color: #f7f2c6;
@@ -28,29 +25,60 @@ $font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
 
   .stat-block-border {
     display: block;
-    height:5px;
+    height: 5px;
     background-color: #caa472;
     border: 0.5px solid black;
   }
 
-  .stat-block-text {
-    padding: 1%;
-  }
+  .stat-block-inner {
+    padding: 3%;
 
+<<<<<<< HEAD
   .stat-name {
     font-family: 'Carrois Gothic SC', $font-stack;
     font-size: 1.8em;
   }
+=======
+    .stat-name {
+      font-family: 'Carrois Gothic SC', $font-stack;
+      font-size: 1.8em;
+      // text-transform: uppercase;
+    }
+>>>>>>> 7d51b4b3814fdf7e06f11b35361c88bb989729b3
 
-  .stat-type {
-    font-size: 0.9em;
-  }
+    .stat-type {
+      font-size: 0.9em;
+    }
 
-  .stat-red-line {
-    .red-line-img {
-      min-height: 10px;
-      max-width: 100%;
+    .stat-red-line {
+      margin: 1% 0;
+
+      .red-line-img {
+        min-height: 10px;
+        max-width: 100%;
+      }
+    }
+
+    .stat-ability-scores {
+      display: block;
+
+      .ability-scores-list {
+        padding: 0 1%;
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+
+        .ability-score {
+          display: inline-block;
+          min-width: 4em;
+          padding:0 5px;
+          text-align: center;
+        }
+      }
     }
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7d51b4b3814fdf7e06f11b35361c88bb989729b3
 }
