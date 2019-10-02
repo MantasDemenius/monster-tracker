@@ -40,7 +40,6 @@ $font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
   .stat-name {
     font-family: 'Carrois Gothic SC', $font-stack;
     font-size: 1.8em;
-    // text-transform: uppercase;
   }
 
   .stat-type {
@@ -53,5 +52,5 @@ $font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
       max-width: 100%;
     }
   }
-  
+
 }
