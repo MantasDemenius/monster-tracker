@@ -1,6 +1,14 @@
 $color-red: #822000;
 $font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
 
+
+// 
+body {
+  margin:0;
+}
+hr{
+  border: solid 1px $color-red;
+}
 .red {
   color: $color-red;
 }
@@ -15,13 +23,14 @@ $font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
 
 .text {
   font-weight: normal;
+  // display: inline-block;
 }
 // Stat block template
 
 .stat-block-template {
   font-family: $font-stack;
   background-color: #f7f2c6;
-  font-size: 1em;
+  font-size: 0.9em;
 
   .stat-block-border {
     display: block;
@@ -33,21 +42,15 @@ $font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
   .stat-block-inner {
     padding: 3%;
 
-<<<<<<< HEAD
+
   .stat-name {
     font-family: 'Carrois Gothic SC', $font-stack;
     font-size: 1.8em;
   }
-=======
-    .stat-name {
-      font-family: 'Carrois Gothic SC', $font-stack;
-      font-size: 1.8em;
-      // text-transform: uppercase;
-    }
->>>>>>> 7d51b4b3814fdf7e06f11b35361c88bb989729b3
+
 
     .stat-type {
-      font-size: 0.9em;
+      font-size: 0.8em;
     }
 
     .stat-red-line {
@@ -70,15 +73,28 @@ $font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
 
         .ability-score {
           display: inline-block;
-          min-width: 4em;
+          min-width: 2em;
           padding:0 5px;
           text-align: center;
         }
       }
     }
-  }
-<<<<<<< HEAD
+    .action-text{
+      padding-bottom: 2%;
 
-=======
->>>>>>> 7d51b4b3814fdf7e06f11b35361c88bb989729b3
+
+      .action-text-paragraph {
+        font-weight: normal;
+        font-style:normal;
+      }
+    }
+    .action-text-header-title{
+      font-size: 1.5em;
+      font-family: $font-stack;
+      padding-top: 1%;
+      line-height: 0.5;
+    }
+
+  }
+
 }
