@@ -32,7 +32,8 @@ hr{
 
 .stat-block-template {
   font-family: $font-stack;
-  background-color: #f7f2c6;
+  // background-color: #f7f2c6;
+  background-image: url('./../pictures/monster-background.png');
   font-size: 0.9em;
 
   .stat-block-border {
@@ -70,20 +71,18 @@ hr{
 
       .ability-scores-list {
         padding: 0 1%;
-        list-style-type: none;
+        width: 100%;
         margin: 0;
         overflow: hidden;
 
         .ability-score-title {
           display: inline-block;
-          min-width: 2em;
-          padding:0 3%;
+          width:15%;
           text-align: center;
         }
         .ability-score-content{
           display: inline-block;
-          min-width: 2em;
-          padding:0 1.5%;
+          width:15%;
           text-align: center;
         }
       }
