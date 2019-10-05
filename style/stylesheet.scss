@@ -2,7 +2,7 @@ $color-red: #822000;
 $font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
 
 
-// 
+//
 body {
   margin:0;
 }
@@ -17,6 +17,9 @@ hr{
   font-weight: bold;
 }
 
+.not-bold {
+  font-weight: normal;
+}
 .italic {
   font-style: italic;
 }
@@ -71,10 +74,16 @@ hr{
         margin: 0;
         overflow: hidden;
 
-        .ability-score {
+        .ability-score-title {
           display: inline-block;
           min-width: 2em;
-          padding:0 5px;
+          padding:0 3%;
+          text-align: center;
+        }
+        .ability-score-content{
+          display: inline-block;
+          min-width: 2em;
+          padding:0 1.5%;
           text-align: center;
         }
       }
@@ -84,7 +93,7 @@ hr{
 
 
       .action-text-paragraph {
-        font-weight: normal;
+
         font-style:normal;
       }
     }
