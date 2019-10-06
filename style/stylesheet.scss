@@ -132,6 +132,7 @@ hr{
   top: 0;
   width:100%;
 
+
   .hamburger {
   position: absolute;
   cursor:pointer;
@@ -152,7 +153,7 @@ hr{
 
   .nav-links {
     position:fixed;
-    display:flex;
+    display:block;
     height:100%;
     width:20vw;
     list-style: none;
@@ -162,12 +163,12 @@ hr{
     top: $nav-height;
     background-color: $color-nav;
     // opacity: 0.98;
-
+    transition: 0.5s;
 
 
     .nav-links-element{
       width:100%;
-      padding: 7%;
+      padding: 3.2vw;
       background-color: #262626;
       border-bottom: 1px solid $color-nav;
       cursor: pointer;
@@ -175,11 +176,13 @@ hr{
       .nav-links-text{
         color: $color-nav-text;
         text-decoration:none;
+        transition: 0.5s;
+        white-space: nowrap;
       }
 
-      // .nav-links-element:hover {
-      //   background-color: #3b3b3b;
-      // }
+      .nav-links-element:hover {
+        background-color: #3b3b3b;
+      }
     }
   }
 }
@@ -188,7 +191,7 @@ hr{
   .nav-hamburger{
 
     .nav-links{
-      width: 45vw;
+      width: 0;
     }
   }
 
