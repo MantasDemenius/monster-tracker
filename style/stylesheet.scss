@@ -12,6 +12,7 @@ $font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
 //
 body {
   margin:0;
+  background-color: rgba(0,0,0,0.04);
 }
 hr{
   border: solid 1px $color-red;
@@ -131,7 +132,6 @@ hr{
   top: 0;
   width:100%;
 
-
   .hamburger {
   position: absolute;
   cursor:pointer;
@@ -154,13 +154,14 @@ hr{
     position:fixed;
     display:flex;
     height:100%;
-    width:50%;
+    width:20vw;
     list-style: none;
     flex-direction: column;
     text-align: center;
     right:0;
     top: $nav-height;
     background-color: $color-nav;
+    // opacity: 0.98;
 
 
 
@@ -169,7 +170,7 @@ hr{
       padding: 7%;
       background-color: #262626;
       border-bottom: 1px solid $color-nav;
-      cursor:pointer;
+      cursor: pointer;
 
       .nav-links-text{
         color: $color-nav-text;
@@ -177,11 +178,19 @@ hr{
       }
 
       // .nav-links-element:hover {
-      //   background-color: #fff;
+      //   background-color: #3b3b3b;
       // }
     }
   }
+}
 
+@media screen and (max-width: 768px) {
+  .nav-hamburger{
+
+    .nav-links{
+      width: 45vw;
+    }
+  }
 
 
 }
