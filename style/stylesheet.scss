@@ -167,20 +167,22 @@ hr{
 
 
     .nav-links-element{
-      width:100%;
-      padding: 3.2vw;
-      background-color: #262626;
-      border-bottom: 1px solid $color-nav;
-      cursor: pointer;
+
 
       .nav-links-text{
         color: $color-nav-text;
+        display:block;
         text-decoration:none;
         transition: 0.5s;
         white-space: nowrap;
+        width:100%;
+        padding: 3.2vw;
+        background-color: #262626;
+        border-bottom: 1px solid $color-nav;
+        cursor: pointer;
       }
 
-      .nav-links-element:hover {
+      .nav-links-text:hover {
         background-color: #3b3b3b;
       }
     }
