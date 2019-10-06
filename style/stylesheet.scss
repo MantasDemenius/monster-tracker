@@ -1,7 +1,14 @@
 $color-red: #822000;
+$color-nav: #191919;
+$color-nav-text: #fff;
+$nav-height: 8vh;
 $font-stack: 'MrsEavesSmallCaps', 'Roboto', 'Helvetica', 'sans-serif';
 
-
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 //
 body {
   margin:0;
@@ -30,6 +37,9 @@ hr{
 }
 // Stat block template
 
+.container {
+  margin-top: $nav-height;
+}
 .stat-block-template {
   font-family: $font-stack;
   // background-color: #f7f2c6;
@@ -93,17 +103,85 @@ hr{
 
 
       .action-text-paragraph {
-
         font-style:normal;
       }
     }
     .action-text-header-title{
       font-size: 1.5em;
       font-family: $font-stack;
-      padding-top: 1%;
-      line-height: 0.5;
+      padding: 1% 0;
+      line-height: 1.5;
     }
 
   }
+
+}
+
+
+
+//----------------------
+//Hamburger
+//----------------------
+
+.nav-hamburger {
+  background: $color-nav;
+  position:fixed;
+  height: $nav-height;
+  left: 0;
+  top: 0;
+  width:100%;
+
+
+  .hamburger {
+  position: absolute;
+  cursor:pointer;
+  right:5%;
+  top:50%;
+  transform: translate(-5%, -50%);
+
+
+
+    .line{
+      width:30px;
+      height:3px;
+      background: #fff;
+      margin:5px;
+    }
+  }
+
+
+  .nav-links {
+    position:fixed;
+    display:flex;
+    height:100%;
+    width:50%;
+    list-style: none;
+    flex-direction: column;
+    text-align: center;
+    right:0;
+    top: $nav-height;
+    background-color: $color-nav;
+
+
+
+    .nav-links-element{
+      width:100%;
+      padding: 7%;
+      background-color: #262626;
+      border-bottom: 1px solid $color-nav;
+      cursor:pointer;
+
+      .nav-links-text{
+        color: $color-nav-text;
+        text-decoration:none;
+      }
+
+      // .nav-links-element:hover {
+      //   background-color: #fff;
+      // }
+    }
+  }
+
+
 
 }
