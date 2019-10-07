@@ -45,8 +45,9 @@ hr{
   font-family: $font-stack;
   // background-color: #f7f2c6;
   background-image: url('./../pictures/monster-background.png');
-  font-size: 0.9em;
+  font-size: 1em;
   margin:0 1% 1% 1%;
+  display:none;
 
   .stat-block-border {
     display: block;
