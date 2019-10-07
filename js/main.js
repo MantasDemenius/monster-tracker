@@ -1,6 +1,6 @@
 const hamburger = document.querySelector('.hamburger')
 const navLinks = document.querySelector('.nav-links')
-const collapseBtn = document.getElementsByClassName('collapsible')
+const collapseBtn = document.getElementsByClassName('btn-collapsible')
 
 let state = false;
 
@@ -19,7 +19,7 @@ hamburger.addEventListener("click", () => {
 
 for (let i = 0; i < collapseBtn.length; i++) {
   collapseBtn[i].addEventListener('click', () => {
-    // this.classList.toggle('active')
+    collapseBtn[i].classList.toggle('active')
     const content = collapseBtn[i].nextElementSibling
     content.style.display === 'block' ? content.style.display = 'none' : content.style.display = 'block'
   })

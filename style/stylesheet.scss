@@ -41,6 +41,24 @@ hr{
 .container {
   margin-top: $nav-height;
 }
+
+.btn-collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .btn-collapsible:hover {
+  background-color: #555;
+}
+
+
 .stat-block-template {
   font-family: $font-stack;
   // background-color: #f7f2c6;
@@ -48,6 +66,7 @@ hr{
   font-size: 1em;
   margin:0 1% 1% 1%;
   display:none;
+  transition: max-height .5s ease-in-out;
 
   .stat-block-border {
     display: block;
