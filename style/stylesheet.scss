@@ -40,6 +40,7 @@ hr{
 
 .container {
   margin-top: $nav-height;
+  width:80%;
 }
 
 .btn-collapsible {
@@ -210,6 +211,9 @@ hr{
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    width:100%;
+  }
   .nav-hamburger{
 
     .nav-links{
