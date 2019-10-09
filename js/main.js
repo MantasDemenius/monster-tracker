@@ -21,6 +21,6 @@ for (let i = 0; i < collapseBtn.length; i++) {
   collapseBtn[i].addEventListener('click', () => {
     collapseBtn[i].classList.toggle('active')
     const content = collapseBtn[i].nextElementSibling
-    content.style.display === 'block' ? content.style.display = 'none' : content.style.display = 'block'
+    content.style.maxHeight ? content.style.maxHeight = null : content.style.maxHeight = content.scrollHeight + 'px'
   })
 }
