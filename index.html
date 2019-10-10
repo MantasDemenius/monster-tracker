@@ -11,28 +11,38 @@
 
   <body>
     <div id="root">
-      <div class="container">
-        <header>
+      <header>
 
 
-        </header>
-        <nav class="nav-hamburger">
-          <div class="logo"><a href="#">monster tracker</a></div>
-          <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <ul class="nav-links">
-            <li class="nav-links-element"><a class="nav-links-text" href="#">Monsters</a></li>
-            <!-- <li class="nav-links-element"><a class="nav-links-text" href="#">Filter</a></li>
+      </header>
+      <nav class="nav-hamburger">
+        <div class="logo"><a href="#">monster tracker</a></div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-links-element"><a class="nav-links-text" href="#">Monsters</a></li>
+          <!-- <li class="nav-links-element"><a class="nav-links-text" href="#">Filter</a></li>
             <li class="nav-links-element"><a class="nav-links-text" href="#">Sign out</a></li> -->
-          </ul>
-        </nav>
-        <section>
-          <div class="container">
-            <!-- <a href="#action-focus">asdsadsadsa</a> -->
+        </ul>
+      </nav>
+            <div class="container">
+      <section>
+        <div class="filter-block">
+          <form action="POST">
+            Name: <input type="text" name="search-name" placeholder="Creature name" class="filter-search-name">
 
+            <button type="submit" name="filter-button" class="filter-search-button">Filter</button>
+          </form>
+
+        </div>
+      </section>
+
+      <section>
+          <!-- <a href="#action-focus">asdsadsadsa</a> -->
+          <div class="stat-block-template-wrapper">
             <button type="button" class="btn-collapsible">Werewolf Alpha</button>
             <div class="stat-block-template">
               <div class="stat-block-border">
@@ -204,11 +214,14 @@
               </div>
             </div>
           </div>
-        </section>
-        <footer>
 
-        </footer>
-        <script src="./js/main.js" type="text/javascript"></script>
+      </section>
+      <footer>
+
+      </footer>
+      <script src="./js/main.js" type="text/javascript"></script>
+      </div>
+    </div>
   </body>
 
   </html>

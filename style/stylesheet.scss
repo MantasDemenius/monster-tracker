@@ -36,9 +36,18 @@ hr{
   font-weight: normal;
   // display: inline-block;
 }
+
+
+
 // Stat block template
 
-.container {
+
+.container{
+    margin: $nav-height auto auto auto;
+}
+
+
+.stat-block-template-wrapper {
   margin: $nav-height auto auto auto;
   width:80%;
 }
@@ -247,7 +256,7 @@ hr{
 }
 
 @media screen and (max-width: 768px) {
-  .container {
+  .stat-block-template-wrapper {
     width:100%;
   }
   .nav-hamburger{
