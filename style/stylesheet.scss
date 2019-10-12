@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'comfortaaregular';
+    src: url('./../fonts/comfortaa-regular-webfont.woff2') format('woff2'),
+         url('./../fonts/comfortaa-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 $color-red: #822000;
 $color-nav: #191919;
 $color-nav-text: #fff;
@@ -183,7 +192,7 @@ hr{
 
   .logo{
     font-size: 2em;
-
+    font-family: 'comfortaaregular', $font-stack;
     position: absolute;
     left:5%;
     top:50%;
@@ -192,12 +201,9 @@ hr{
     a {
       text-decoration: none;
       cursor: pointer;
-      color: white;
+      color: brown;
     }
   }
-
-
-
 
   .hamburger {
   position: absolute;
